@@ -1,0 +1,43 @@
+{
+  "author": "Tyler Ingham",
+  "bugs": {
+    "url": "https://github.com/ingham-tyler/Technical-Evaluation/issues"
+  },
+  "build": {
+    "appId": "com.tyleringham.AutoTextRedactor5000",
+    "copyright": "Copyright Tyler Ingham",
+    "win": {
+      "target": "zip"
+    },
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "zip"
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  },
+  "dependencies": {
+    "bulma": "0.9.2",
+    "electron-window-state": "5.0.3"
+  },
+  "description": "Technical Evaluation Project",
+  "devDependencies": {
+    "electron": "12.0.0",
+    "nodemon": "2.0.7"
+  },
+  "homepage": "https://github.com/ingham-tyler/Technical-Evaluation#readme",
+  "main": "index.js",
+  "name": "tech-eval",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingham-tyler/Technical-Evaluation.git"
+  },
+  "scripts": {
+    "debug": "electron --inspect-brk=5858 .",
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "version": "1.0.0"
+}

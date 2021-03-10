@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Lato';
+  src:url(fonts/Lato-Regular.ttf);
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  overflow-y: hidden;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(236, 236, 233);
+  color: #1f2222;
+
+  padding: 15px;
+
+  user-select: none;
+  -webkit-app-region: drag;
+}
+
+header, main {
+  -webkit-app-region: no-drag;
+}
+
+#header {
+  margin-bottom: 45px;
+}
+
+#input-section {
+  margin-bottom: 45px;
+}

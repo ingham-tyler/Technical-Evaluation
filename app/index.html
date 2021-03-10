@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="is-clipped">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <title>Auto Text Redactor 5000</title>
+
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <h1 class="title">Auto Text Redactor 5000</h1>
+      </div>
+    </header>
+    <main>
+      <div id="input-section">
+        <div id="error-modal" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <h3 class="title is-2 has-text-danger-dark">Incomplete fields</h3>
+            <p class="has-text-info-dark">Please enter at least one word and a file path</p>
+            <button id="error-modal-close-btn" class="modal-close is-info is-large"></button>
+          </div>
+        </div>
+        <div id="key-words" class="field">
+          <label class="label">Key Words or Phrases</label>
+          <div class="control">
+            <textarea id="key-words-input" class="textarea" name="key-words-input" rows="4" cols="35"
+            placeholder="Please enter a list separated by either commas or spaces of key words and/or phrases"></textarea>
+          </div>
+        </div>
+        <div id="file-path" class="field">
+          <label class="label">File Path</label>
+          <div class="control">
+            <input type="text" id="file-path-input" class="input" name="file-path-input" />
+          </div>
+        </div>
+      </div>
+      <div id="buttons-section" class="field is-grouped">
+        <p class="control">
+          <button id="start-btn" class="button is-success is-medium">Start</button>
+        </p>
+        <p class="control">
+          <button id="quit-btn" class="button is-info is-medium">Exit</button>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
